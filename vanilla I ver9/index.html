@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래밍 언어 가이드</title>
+    <link rel="stylesheet" href="./CSS/mainpage.css?v=5">
+</head>
+<body>
+
+    <header class="header-nav">
+        <h1 class="logo">프로그래밍 언어 가이드</h1>
+        <div class="team-name" style="text-align: center; font-weight: bold; color: #5c4033;">팀:바닐라 I</div>
+        
+        <button class="nav-toggle" aria-label="메뉴 열기">
+           ☰
+        </button>
+        
+        <nav class="nav-menu">
+            <a href="./C_Integration.html" class="lang-button">C언어</a>
+            <a href="./Python_Integration.html" class="lang-button">파이썬</a>
+            <a href="./HTML_Integration.html" class="lang-button">HTML/CSS</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <main>
+            <section id="intro">
+                <div class="wrapper">
+                    <h2>프로그래밍 언어 가이드</h2>
+                    <p>
+                    각 프로그래밍 언어의 특징을 알아보고, 
+                    <span class="text-desktop">우측 목차를</span>
+                    <span class="text-mobile">아래 목차를</span> 
+                    통해 원하는 정보로 빠르게 이동하세요.
+                    </p>
+                </div>
+            </section>
+            
+            <hr style="border:0; border-top:2px dashed #eaddc5; margin: 10px 0 30px 0;">
+
+            <article id="c-lang" class="lang-article">
+                <h3>C언어</h3>
+                <p>
+                    C언어는 운영체제나 시스템 프로그래밍에 널리 사용되는 강력하고 효율적인 프로그래밍 언어입니다. 
+                    하드웨어를 직접 제어할 수 있는 메모리 관리 기능과 빠른 실행 속도가 가장 큰 특징이며, 
+                    이후 등장한 많은 프로그래밍 언어들의 뼈대가 되었습니다.
+                </p>
+                <a href="./C_Integration.html" class="detail-link">C언어 자세히 알기 바로가기 ➔</a>
+            </article>
+
+            <article id="python-lang" class="lang-article">
+                <h3>파이썬 (Python)</h3>
+                <p>
+                    파이썬은 문법이 간결하고 읽기 쉬워 초보자가 학습하기에 매우 적합한 고급 프로그래밍 언어입니다. 
+                    풍부한 라이브러리를 바탕으로 데이터 분석, 인공지능(AI), 웹 서버 개발, 자동화 스크립트 등 
+                    현대 IT 산업의 거의 모든 분야에서 폭넓게 활용되고 있습니다.
+                </p>
+                <a href="./Python_Integration.html" class="detail-link">파이썬 자세히 알기 바로가기 ➔</a>
+            </article>
+
+            <article id="html-css-lang" class="lang-article">
+                <h3>HTML / CSS</h3>
+                <p>
+                    웹 개발의 가장 기본이 되는 핵심 기술입니다. HTML은 문서의 구조와 내용을 시맨틱하게 설계하고, 
+                    CSS는 레이아웃, 색상, 애니메이션 등 웹 페이지의 시각적인 스타일을 아름답게 꾸며줍니다. 
+                    사용자와 상호작용하는 화면(Front-end)을 만들기 위해 필수적으로 알아야 합니다.
+                </p>
+                <a href="./HTML_Integration.html" class="detail-link">HTML/CSS 자세히 알기 바로가기 ➔</a>
+            </article>
+
+            <hr style="border:0; border-top:2px dashed #eaddc5; margin: 40px 0;">
+
+            <section id="comparison">
+                <h3>한눈에 보는 언어 비교표</h3>
+                <p>💡 세 가지 기술의 핵심 차이점과 주요 사용처를 비교해 보세요.</p>
+                
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">언어/기술</th>
+                            <th style="width: 35%;">주요 특징</th>
+                            <th style="width: 15%;">학습 난이도</th>
+                            <th style="width: 30%;">주요 사용처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>C언어</strong></td>
+                            <td style="text-align: left;">하드웨어 및 메모리 직접 제어 가능, 속도가 매우 빠름, 프로그래밍의 근본</td>
+                            <td>높음</td>
+                            <td style="text-align: left;">운영체제(OS), 임베디드 시스템, 고성능 게임 엔진</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Python (파이썬)</strong></td>
+                            <td style="text-align: left;">문법이 영어처럼 간결하고 직관적임, 방대한 오픈소스 라이브러리 지원</td>
+                            <td>낮음<br><small>(입문용 추천)</small></td>
+                            <td style="text-align: left;">인공지능(AI), 데이터 분석, 웹 백엔드, 업무 자동화</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML / CSS</strong></td>
+                            <td style="text-align: left;">프로그래밍 로직보다는 시각적 문서 구조(HTML)와 디자인(CSS)을 정의하는 마크업 언어</td>
+                            <td>낮음</td>
+                            <td style="text-align: left;">웹 페이지 프론트엔드 화면 구현, UI/UX 레이아웃 설계</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <nav class="categoryNav">
+                <h2>Category</h2>
+                <ul>
+                    <li>
+                        <a href="#c-lang">C언어</a><br>
+                        <a href="#c-lang"><img src="./img/c_logo.png" alt="C언어 로고" class="cat-icon"></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#python-lang">파이썬</a><br>
+                        <a href="#python-lang"><img src="./img/python_logo.png" alt="파이썬 로고" class="cat-icon"></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#html-css-lang">HTML/CSS</a><br>
+                        <a href="#html-css-lang"><img src="./img/html_logo.png" alt="HTML/CSS 로고" class="cat-icon"></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#comparison">언어 비교표</a><br>
+                        <a href="#comparison" style="display: inline-block; font-size: 50px; text-decoration: none; margin-top: 5px; color: #8c6239;">📊</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p><small>&copy; 팀:바닐라 I (20262459 박인혁 & 20262460 최시현) - 프로그래밍 언어 가이드</small></p>
+        <a href="#" class="top-button">▲ TOP</a>
+    </footer>    
+
+</body>
+</html>

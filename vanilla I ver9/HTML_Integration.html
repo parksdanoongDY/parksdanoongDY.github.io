@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01장. HTML 텍스트 기본 문법 및 구조</title>
+    <link rel="stylesheet" href="./CSS/contentpage.css">
+</head>
+<body>
+
+    <header class="header-nav">
+        <h1 class="logo">웹 프론트엔드 핵심 요약 가이드</h1>
+        <div class="team-name" style="text-align: center; font-weight: bold; color: #5c4033;">팀:바닐라 I</div>
+        <p style="text-align: center; color: #7a5431; margin-top: 5px; font-size: 14px;">본 사이트는 내장 브라우저 구동형 학습 페이지입니다.</p>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="./index.html" class="back-link">메인 페이지로 돌아가기</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <nav class="toc-nav">
+            <hr> <h2 class="chapter_title">1장 ~ 12장 전체 단원 가이드 목차</h2>
+            <ul class="chapter">
+                <li><a href="#ch1">01장. HTML 텍스트 기본 문법 및 구조</a></li>
+                <li><a href="#ch2">02장. 미디어(이미지), 하이퍼링크 및 목록 제어</a></li>
+                <li><a href="#ch3">03장. 테이블(Table) 구조 및 사용자 입력 폼(Form)</a></li>
+                <li><a href="#ch4">04장. 시맨틱(Semantic) 태그와 웹 문서 구조화</a></li>
+                <li><a href="#ch5">05장. CSS 선택자(Selector) 및 요소 구조 (Box Model)</a></li>
+                <li><a href="#ch6">06장. 텍스트, 크기 및 배경(Background) CSS 속성</a></li>
+                <li><a href="#ch7">07장. CSS 레이아웃 및 목록(List) 관련 속성</a></li>
+                <li><a href="#ch8">08장. 1차원 Flexbox 레이아웃 구조</a></li>
+                <li><a href="#ch9">09장. CSS 애니메이션(Keyframes) 제어</a></li>
+                <li><a href="#ch10">10장. Float 레이아웃 기술</a></li>
+                <li><a href="#ch11">11장. Position 속성 기반 공간 분할 체계</a></li>
+                <li><a href="#ch12">12장. 외부 리소스(구글 지도) 삽입 제어</a></li>
+            </ul>
+            <hr> </nav>
+
+        <main>
+            <div class="vido">
+                <iframe 
+                src="https://youtube.com/embed/OJsm1hdOZ5o"
+                allowfullscreen>
+                </iframe>
+            </div>
+            <article id="ch1" class="lang-article">
+                <h2>01장. HTML 텍스트 기본 문법 및 구조</h2>
+                <p>HTML의 뼈대와 텍스트를 구성하는 태그를 명세합니다.</p>
+                <ul>
+                    <li><b>HTML의 문법</b>
+                        <ul>
+                            <li>&lt;&gt;안에 특정 문법을 넣어서 태그를 지정하여, &lt;/&gt; 으로 태그 지정을 끝낸다.</li>
+                            <li>텍스트가 어느 문법 안에 넣어져 있지 않을 경우, 기본적으로 해당 문법으로 취급한다.</li>
+                        </ul>
+                    </li>
+                    <li><b>제목 및 본문 태그</b>
+                        <ul>
+                            <li>h6 ~ h1: &lt;h6&gt;(내용)&lt;/h6&gt; 으로 입력하여, 숫자에 따라 크기가 다른 텍스트가 쓰여진다.</li>
+                            <li>p: &lt;p&gt;(내용)&lt;/p&gt; 으로 입력하여, &lt;h6~1&gt; 보다 작은, 본문 내용 크기의 텍스트가 쓰여진다.</li>
+                        </ul>
+                    </li>
+                    <li><b>텍스트 서식 태그</b>
+                        <ul>
+                            <li>b: 내용을 굵게 표시한다.</li>
+                            <li>i: 내용을 기울인다.</li>
+                            <li>strong: 내용을 강하게 강조한다.</li>
+                            <li>em: 내용을 약하게 강조한다.</li>
+                            <li>ins: 밑줄이 표시된다.</li>
+                            <li>del: 취소선이 표시된다.</li>
+                            <li>s: 다른 취소선이 표시된다.</li>
+                            <li>u: 다른 밑줄이 표시된다.</li>
+                            <li>sup: 텍스트 위첨자로 표시한다.</li>
+                            <li>sub: 텍스트 아래첨자로 표시한다.</li>
+                            <li>small: 텍스트를 조금 더 작게 표시한다.</li>
+                        </ul>
+                    </li>
+                    <li><b>기타 텍스트 제어</b>
+                        <ul>
+                            <li>br: 강제로 줄바꿈 한다.</li>
+                            <li>hr: 가로줄을 넣는다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch2" class="lang-article">
+                <h2>02장. 미디어(이미지), 하이퍼링크 및 목록 제어</h2>
+                <p>문서에 링크와 이미지를 삽입하고 항목을 나열하는 방법을 배웁니다.</p>
+                <ul>
+                    <li><b>목록 태그 (List)</b>
+                        <ul>
+                            <li>ul, ol: 문장을 리스트 형식으로 만들어 표시합니다.</li>
+                            <li>li: ul, ol 안에 li를 넣어 사용하여, 각각 순서 없는, 순서 있는 리스트로 만듭니다.</li>
+                            <li>참고로, li 안에 또 다른 li를 넣거나 ul, ol 안에 ol, ul을 넣어서 하위 목록 생성이 가능합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>하이퍼링크</b>
+                        <ul>
+                            <li>a href="": 해당 태그는 하이퍼링크를 생성합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>이미지 삽입 (img)</b>
+                        <ul>
+                            <li>페이지에 이미지를 추가할 때 사용되는 태그입니다.</li>
+                            <li>형식: &lt;img src="(이미지의 경로)" alt="(이미지의 대체 텍스트)" title="이미지의 추가 정보" height="(이미지의 세로폭)" width="(이미지의 가로폭)"&gt;</li>
+                            <li>src: 이미지 파일의 경로를 지정합니다.</li>
+                            <li>alt: 대체 텍스트로, 이미지를 볼 수 없을 경우에 이미지에 대한 설명을 제공합니다.</li>
+                            <li>title: 이미지에 마우스를 갖다대면 말풍선으로 추가 정보를 볼 수 있습니다.</li>
+                            <li>height, width: 이미지의 세로, 가로폭을 지정합니다. px 단위를 사용합니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch3" class="lang-article">
+                <h2>03장. 테이블(Table) 구조 및 사용자 입력 폼(Form)</h2>
+                <p>표 형태의 데이터 배치와 서버 통신을 위한 입력 양식 구조입니다.</p>
+                <ul>
+                    <li><b>Table 태그</b>
+                        <ul>
+                            <li>table: 해당 태그는 테이블을 만드는 태그입니다.</li>
+                            <li>하위 태그 구성: tr, th, td.</li>
+                        </ul>
+                    </li>
+                    <li><b>Form 태그 및 입력 요소</b>
+                        <ul>
+                            <li>form: CGI(Common Gateway Interface)를 사용하기 위해서 입력값을 받는 태그입니다.</li>
+                            <li>input: 입력값 요소를 지정합니다. type에 따라 입력값을 취합니다.</li>
+                            <li>input type 종류: text, number, url, email, tel, search, range, color, date, time, datemtime-local, checkbox, radio, button, submit, imgage, reset, hidden, file.</li>
+                            <li>기타 폼 태그: textarea, button, output, datalist.</li>
+                            <li>선택 메뉴: select 및 하위 option.</li>
+                            <li>그룹 및 라벨: fieldset, legend, label.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch4" class="lang-article">
+                <h2>04장. 시맨틱(Semantic) 태그와 웹 문서 구조화</h2>
+                <p>문서의 논리적 의미를 부여하는 시맨틱 마크업을 다룹니다.</p>
+                <ul>
+                    <li><b>시맨틱 태그 개요</b>
+                        <ul>
+                            <li>해당 태그를 사용한 레이아웃은 컴퓨터가 읽어낼 수 있습니다.</li>
+                            <li>이는 검색 노출을 용이하게 하고, 시각장애인에게 사이트의 어디가 본문인지 아닌지를 알려줄 수 있다는 장점이 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>주요 시맨틱 태그 목록</b>
+                        <ul>
+                            <li>header: 일반적으로 가장 윗부분에 위치합니다.</li>
+                            <li>nav: 내비게이션(navigation)의 약자로, 일반적으로 상단바 등 사이트를 안내하는 요소에 사용됩니다.</li>
+                            <li>main: 문서의 주된 콘텐츠를 표시합니다. 이 태그는 두 개 이상 보여져서는 안 됩니다.</li>
+                            <li>article: 웹 페이지의 내용에 사용하는 태그입니다.</li>
+                            <li>section: 콘텐츠를 분리하는 영역 태그입니다.</li>
+                            <li>aside: 주요 부분을 표시하고 남은 부분을 설명하는 태그입니다. 주로 중요하지 않은 부분에 사용됩니다.</li>
+                            <li>footer: 일반적으로 가장 아랫부분에 위치합니다. 사이트의 라이선스, 주소, 연락처 등을 넣습니다.</li>
+                            <li>object: 외부 자원을 삽입할 때 사용합니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch5" class="lang-article">
+                <h2>05장. CSS 선택자(Selector) 및 요소 구조 (Box Model)</h2>
+                <p>HTML 요소를 식별하는 방법과 요소의 물리적 박스 모델을 정의합니다.</p>
+                <ul>
+                    <li><b>CSS 선택자</b>
+                        <ul>
+                            <li>tag: HTML 태그명으로 직접 선택합니다.</li>
+                            <li>#ID: 아이디명으로 단일 선택합니다.</li>
+                            <li>.class: 특정 문법 안에 class="(클래스이름)" 을 넣고, css에서 '.(클래스 이름)' 으로 사용합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>요소 구조 (Box Model 구성 요소)</b>
+                        <ul>
+                            <li>content: 내용입니다.</li>
+                            <li>padding: 경계선 안의 여백입니다.</li>
+                            <li>border: 경계선입니다.</li>
+                            <li>margin: 경계선 바깥의 여백입니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch6" class="lang-article">
+                <h2>06장. 텍스트, 크기 및 배경(Background) CSS 속성</h2>
+                <p>글꼴과 색상, 크기, 배경 처리 등 핵심 CSS 스타일링 속성입니다.</p>
+                <ul>
+                    <li><b>글꼴(Font) 관련</b>
+                        <ul>
+                            <li>font-size, font-weight, font-style, font-family 속성이 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>텍스트(Text) 관련</b>
+                        <ul>
+                            <li>color, text-align, text-shadow, text-decoration, line-height 속성이 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>크기(Size) 관련</b>
+                        <ul>
+                            <li>width, height 속성이 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>배경(Background) 관련</b>
+                        <ul>
+                            <li>background-color, background-image, background-repeat, background-size 속성이 있습니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch7" class="lang-article">
+                <h2>07장. CSS 레이아웃 및 목록(List) 관련 속성</h2>
+                <p>전반적인 문서 배치 시스템과 목록 기호 제어 속성을 다룹니다.</p>
+                <ul>
+                    <li><b>레이아웃(Layout) 관련 속성</b>
+                        <ul>
+                            <li>display, grid 속성이 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>목록(List) 관련 속성</b>
+                        <ul>
+                            <li>list-style-type: 목록 항목의 마커(불릿 등) 유형을 제어합니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch8" class="lang-article">
+                <h2>08장. 1차원 Flexbox 레이아웃 구조</h2>
+                <p>요소를 1차원 선상에 배열하여 유연한 배치를 돕는 레이아웃 모델입니다.</p>
+                <ul>
+                    <li><b>Flexbox 개념</b>
+                        <ul>
+                            <li>레이아웃을 가로 행 또는 세로 열의 한 방향으로 나열하는 것입니다.</li>
+                            <li>부모 요소를 플렉스 컨테이너로 설정하면, 내부의 자식 요소들은 자동으로 플렉스 아이템이 되어 유연하게 크기와 위치가 조정되는 구조로 작동합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>컨테이너 속성 (부모 영역 제어)</b>
+                        <ul>
+                            <li>display: flex; 또는 flexbox 속성을 사용합니다.</li>
+                            <li>flex-direction: 배치 방향(row/column)을 설정합니다.</li>
+                            <li>flex-wrap: 줄넘김 처리를 설정합니다.</li>
+                            <li>gap: 박스 사이의 여백을 지정합니다.</li>
+                            <li>justify-content: 메인축 방향 정렬을 지정합니다.</li>
+                            <li>align-items: 수직축 방향 정렬을 지정합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>플렉스 아이템 속성 (자식 영역 제어)</b>
+                        <ul>
+                            <li>flex-basis: 아이템의 기본 크기를 설정합니다 (row일 때는 너비, column일 때는 높이).</li>
+                            <li>order: 배치 순서를 지정합니다 (작은 숫자일수록 먼저 배치됩니다).</li>
+                            <li>flex: 1; : 컨테이너 내에서 아이템들이 남은 공간을 비율에 맞게 채웁니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch9" class="lang-article">
+                <h2>09장. CSS 애니메이션(Keyframes) 제어</h2>
+                <p>CSS 스타일의 동적 변화를 시간 흐름에 따라 통제하는 방법입니다.</p>
+                <ul>
+                    <li><b>키 프레임 (keyframe) 작동 원리</b>
+                        <ul>
+                            <li>애니메이션 중간의 프레임을 제어하여 객체들의 위치와 크기를 지정합니다.</li>
+                            <li>개발자가 키 프레임만 작성해 주면 컴퓨터는 그 사이의 프레임들을 자동으로 생성합니다.</li>
+                            <li>키 프레임은 퍼센트 단위로 지정하며 0%는 애니메이션의 시작(from), 100%는 애니메이션의 종료점(to)입니다.</li>
+                            <li>@keyframes 규칙 안에서 CSS 스타일을 지정하면 애니메이션은 현재의 스타일에서 새로운 스타일로 점진적으로 변화합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>애니메이션 속성 호출</b>
+                        <ul>
+                            <li>animation: 지속시간 애니메이션이름; 형태로 호출합니다 (예: animation: 2s myanim;).</li>
+                            <li>animation-iteration-count: 애니메이션의 반복 횟수를 지정합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>속도 효과 (Easing effect)</b>
+                        <ul>
+                            <li>ease: 느린 속도로 시작했다가 빨라지고 다시 느린 속도로 종료됩니다(기본값).</li>
+                            <li>linear: 처음부터 끝까지 같은 속도로 애니메이션을 지정합니다.</li>
+                            <li>ease-out: 끝날 때 속도가 줄어듭니다.</li>
+                            <li>ease-in: 시작을 천천히 합니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch10" class="lang-article">
+                <h2>10장. Float 레이아웃 기술</h2>
+                <p>문서 흐름에서 요소를 띄워 좌우로 배치하는 전통적인 레이아웃 기법입니다.</p>
+                <ul>
+                    <li><b>float 적용</b>
+                        <ul>
+                            <li>float: left; 가 적용된 이미지는 왼쪽으로 플로팅되었으므로 일반적인 흐름에서 벗어나서 가능한 한 상단으로 이동합니다.</li>
+                            <li>텍스트는 이미지의 오른쪽과 아래쪽을 감싸는 형태로 배치됩니다.</li>
+                            <li>플로팅된 이미지에 적용된 바깥 마진은 이미지와 텍스트 사이의 공간을 설정합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>clear 속성</b>
+                        <ul>
+                            <li>clear: left; (또는 clear: both;)를 사용하여 플로팅 요소 다음의 일반 흐름이 엉키는 것을 강제로 정리하고 줄바꿈 처리합니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch11" class="lang-article">
+                <h2>11장. Position 속성 기반 공간 분할 체계</h2>
+                <p>고유한 공간 분할 방식에서 벗어나 특별한 배치를 수립하는 강력한 기법입니다.</p>
+                <ul>
+                    <li><b>기본 원리</b>
+                        <ul>
+                            <li>기본적으로 각 요소가 갖는 고유한 공간분할(블록 또는 인라인)방식에 따라 나열된 순서에 따라 배치되나, 순서를 바꾸거나 특별한 공간 배치를 원할 경우 레이아웃 속성을 사용합니다.</li>
+                            <li>위치 지정: top, right, bottom, left를 통해 상위박스와의 경계에서 얼마나 간격을 둘 것인지를 결정합니다.</li>
+                        </ul>
+                    </li>
+                    <li><b>Position 속성값 분류</b>
+                        <ul>
+                            <li><b>static (정적 위치)</b>: 기본값으로, 페이지의 정상적인 흐름에 따라 요소의 위치가 결정되며 위치지정이 필요 없습니다.</li>
+                            <li><b>relative (상대 위치)</b>: 정상적인 위치에서 상대적으로 요소를 배치합니다. 자신의 원래 정적 위치를 기준으로 상대 위치에 배치됩니다.</li>
+                            <li><b>absolute (절대 위치)</b>: 문서 또는 상위요소 내에서의 절대 위치에 배치됩니다. 상위박스가 바뀌면 따라서 위치 이동되며 다른 박스와 독립적으로 중첩 가능합니다. <b>컨테이너는 일반적으로 relative 로 선언되어야 합니다</b>.</li>
+                            <li><b>fixed (고정 위치)</b>: 브라우저 윈도우에 상대적으로 요소의 위치를 잡습니다. 윈도우가 스크롤되어도 화면에서 요소는 고정됩니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr> <article id="ch12" class="lang-article">
+                <h2>12장. 외부 리소스(구글 지도) 삽입 제어</h2>
+                <p>지도와 같은 외부 플랫폼의 화면을 자체 웹 문서에 임베딩하는 방식입니다.</p>
+                <ul>
+                    <li><b>iframe 구조</b>
+                        <ul>
+                            <li>외부 리소스를 문안에 퍼가기 위한 태그로 구글 지도 공유 메뉴의 '지도 퍼가기'를 통해 HTML 복사 후 삽입합니다.</li>
+                            <li>적용 서식 예시: &lt;iframe src="http://googleusercontent.com/..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt; &lt;/iframe&gt;</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </main>
+        <hr>
+        <div class="survey-section">
+            <h3 class="survey-title">더 나은 학습 환경을 위해 여러분의 의견을 들려주세요!</h3>
+            <a href="./form.html" class="survey-btn">사이트 이용 만족도 조사 참여하기</a>
+        </div>
+    </div>
+
+    <footer>
+        <p><small>&copy; 팀:바닐라 I (20262459 박인혁 & 20262460 최시현) - 프로그래밍 언어 가이드</small></p>
+        <a href="#" class="top-button">▲ TOP</a>
+    </footer>
+
+</body>
+</html>

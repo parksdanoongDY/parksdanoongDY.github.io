@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* 기본 설정 및 페이지 배경 (메인 테마 연동) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '맑은 고딕', 'Malgun Gothic', sans-serif;
+    color: #4a3b32;
+    background-color: #fcf9f2;
+    line-height: 1.6;
+    padding: 50px 20px;
+}
+
+/* 상단 헤더 및 메인으로 돌아가기 버튼 */
+.header-nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.logo b {
+    background: linear-gradient(to right, #4a3627, #c49a6c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #c49a6c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #a67c52;
+}
+
+/* 수평선 디자인= */
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #eaddc5;
+    margin: 20px auto;
+    border-radius: 2px;
+    max-width: 650px;
+}
+
+form hr {
+    margin: 30px 0 25px 0;
+}
+
+/* 설문조사 폼 컨테이너 (카드 스타일) */
+form {
+    background-color: #ffffff;
+    border: 1px solid #f0e5d1;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(139, 98, 57, 0.05);
+}
+
+form p {
+    color: #7a5431;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form p b {
+    color: #8c6239;
+    font-size: 1.05em;
+}
+
+/* 입력 필드 디자인 */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #d8b894;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #5c4c42;
+    background-color: #faf6f0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #8c6239;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(140, 98, 57, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* 체크박스, 라디오 버튼 및 라벨 */
+label {
+    color: #5c4c42;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #8c6239;
+    cursor: pointer;
+}
+
+br + br {
+    display: none; 
+}
+form > label:last-of-type, form > select, form > input[type="radio"]:last-of-type {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* 제출 및 취소(a 태그) 버튼 디자인 */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* 버튼 가운데 정렬 */
+}
+
+.btn-submit,
+.btn-cancel {
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    line-height: normal;
+}
+
+.btn-submit {
+    background-color: #8c6239;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #5c4033;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background-color: #eaddc5;
+    color: #5c4c42;
+}
+
+.btn-cancel:hover {
+    background-color: #d8b894;
+    color: #4a3627;
+    transform: translateY(-2px);
+}

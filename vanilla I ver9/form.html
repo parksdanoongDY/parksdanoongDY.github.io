@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사이트 이용 만족도 조사</title>
+    <link rel="stylesheet" href="./css/formpage.css">
+</head>
+<body>
+    
+    <div class="header-nav">
+        <p class="logo"><b>사이트 이용 만족도 조사</b></p>
+        <a href="./index.html" class="back-link">메인 페이지로 돌아가기</a>
+    </div>
+
+    <hr>
+    
+    <form action="./index.html">
+        
+        <p><b>이용자 아이디</b><br>
+        <input type="text" placeholder="아이디"></p><br>
+
+        <p>방문한 언어 정보 페이지를 고르세요(복수 선택 가능)</p>
+        <label><input type="checkbox" name="visited" value="1">C언어</label>
+        <label><input type="checkbox" name="visited" value="2">HTML+CSS</label>
+        <label><input type="checkbox" name="visited" value="3">Python</label>
+
+        <p>가장 도움이 된 프로그래밍 언어</p>
+        <select>
+            <option value="c">C언어</option>
+            <option value="html">HTML+CSS</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+
+        <p>전반적인 사이트 이용 만족도(단일 선택)</p>
+        <label><input type="radio" name="satisfaction" value="good" checked>만족</label>
+        <label><input type="radio" name="satisfaction" value="normal">보통</label>
+        <label><input type="radio" name="satisfaction" value="bad">불만족</label>
+        <br><br>
+
+        <p><b>하고 싶은 말 (건의사항)</b><br>
+        <textarea rows="5" name="message" placeholder="건의사항을 자유롭게 적어주세요."></textarea></p>
+        
+        <hr>
+        
+        <div class="btn-group">
+            <input type="submit" value="제출하기" class="btn-submit">
+            <a href="./index.html" class="btn-cancel">취소</a>
+        </div>
+
+    </form>
+</body>
+</html>
